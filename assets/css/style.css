@@ -259,19 +259,11 @@ header .content .perfil-text h1::after {
 
 #about {
   background-color: var(--secondary-color);
-}
-
-#about .about {
-  width: 100%;
-  height: 50rem;
-
-  color: white;
-
   position: relative;
   z-index: 1;
 }
 
-#about .about::before {
+#about::before {
   content: '';
   width: 100%;
   height: 20rem;
@@ -281,6 +273,16 @@ header .content .perfil-text h1::after {
   position: absolute;
   top: 0;
   z-index: -1;
+}
+
+#about .about {
+  width: 100%;
+  height: 50rem;
+
+  color: white;
+
+  /* position: relative;
+  z-index: 1; */
 }
 
 #about .about .header {
