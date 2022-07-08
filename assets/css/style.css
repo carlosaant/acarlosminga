@@ -182,6 +182,14 @@ header .content .perfil-text {
 header .content .perfil-text h2 {
   font-size: var(--h2-tam);
   color: var(--text-color);
+
+  position: relative;
+}
+header .content .perfil-text h2::before {
+  content: '</>';
+  color: var(--suport-color);
+  position: absolute;
+  left: -3rem;
 }
 
 header .content .perfil-text h1 {
