@@ -143,6 +143,10 @@ header {
   background: var(--secondary-color);
 }
 
+header .wrapper {
+  padding-inline: 0;
+}
+
 header .content {
   width: 100%;
   height: 30rem;
@@ -152,8 +156,6 @@ header .content {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  padding-top: 1rem;
 
   overflow: hidden;
   position: relative;
@@ -251,4 +253,59 @@ header .content .perfil-text h1::after {
   to {
     visibility: visible;
   }
+}
+
+/* ============================== ABOUT ========================= */
+
+#about {
+  background-color: var(--secondary-color);
+}
+
+#about .about {
+  width: 100%;
+  height: 50rem;
+
+  color: white;
+
+  position: relative;
+  z-index: 1;
+}
+
+#about .about::before {
+  content: '';
+  width: 100%;
+  height: 20rem;
+  background-color: var(--primary-color);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+#about .about .header {
+  display: flex;
+  flex-direction: column;
+  padding-block: 2rem;
+}
+
+#about .about .header h2 {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  font-size: var(--h2-tam);
+  color: var(--suport-color);
+}
+
+#about .about .header img {
+  align-self: center;
+}
+
+#about .about .text-content {
+  padding-inline: 2rem;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#about .about .text-content p {
+  font-size: 1.6rem;
+  text-align: justify;
 }
