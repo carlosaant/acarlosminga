@@ -307,5 +307,6 @@ header .content .perfil-text h1::after {
 
 #about .about .text-content p {
   font-size: 1.6rem;
+  line-height: 150%;
   text-align: justify;
 }
