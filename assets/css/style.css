@@ -170,6 +170,13 @@ header .content .perfil-image {
   border: 0.2rem solid var(--suport-color);
 }
 
+header .content .perfil-image img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 0.1rem solid transparent;
+}
+
 header .content .perfil-text {
   display: flex;
   flex-direction: column;
