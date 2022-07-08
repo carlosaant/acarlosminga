@@ -5,6 +5,15 @@
   --text-color: #f9eaff;
   --menu-bg: #f5f6fa;
   --suport-color: #00c9a4;
+
+  --font-b: 'Rubik', sans-serif;
+
+  --h1-tam: 3rem;
+  --h2-tam: 1.8rem;
+}
+
+body {
+  font-family: var(--font-b);
 }
 
 .wrapper {
@@ -134,9 +143,48 @@ header {
 
 header .content {
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   background: url('../images/tech-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding-top: 1rem;
+}
+
+header .content .perfil-image {
+  background-color: var(--primary-color);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.2rem solid var(--suport-color);
+}
+
+header .content .perfil-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.1rem;
+  padding-block: 0.5rem;
+}
+
+header .content .perfil-text h2 {
+  font-size: var(--h2-tam);
+  color: var(--text-color);
+}
+
+header .content .perfil-text h1 {
+  font-size: var(--h1-tam);
+  color: var(--text-color);
 }
