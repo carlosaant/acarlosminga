@@ -202,4 +202,33 @@ header .content .perfil-text h2::before {
 header .content .perfil-text h1 {
   font-size: var(--h1-tam);
   color: var(--text-color);
+
+  position: relative;
+}
+
+header .content .perfil-text h1::after {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 3rem;
+  background-color: var(--suport-color);
+
+  position: absolute;
+  top: 0;
+  right: -0.5rem;
+
+  animation: cursorPiscaElem infinite 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes cursorPiscaElem {
+  from {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
 }
