@@ -8,7 +8,7 @@
 
   --font-b: 'Rubik', sans-serif;
 
-  --h1-tam: 3rem;
+  --h1-tam: 3.2rem;
   --h2-tam: 1.8rem;
 }
 
@@ -177,7 +177,7 @@ header .content::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: opacity(0.8);
+  filter: opacity(0.7);
 }
 
 header .content .perfil-image {
