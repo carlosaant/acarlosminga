@@ -5,6 +5,7 @@
   --text-color: #f9eaff;
   --menu-bg: #f5f6fa;
   --suport-color: #00c9a4;
+  --suport-color-yellow: #f9f871;
 
   --font-b: 'Rubik', sans-serif;
 
@@ -282,6 +283,14 @@ header .content .perfil-links .perfil-github {
 
   border: 0.2rem solid var(--suport-color);
   border-radius: 0.5rem;
+
+  transition: all 0.3s;
+}
+
+header .content .perfil-links .perfil-linkedin:hover,
+header .content .perfil-links .perfil-github:hover {
+  transform: scale(1.1);
+  border-color: var(--suport-color-yellow);
 }
 
 header .content .perfil-links img {
