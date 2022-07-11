@@ -203,8 +203,8 @@ header .content .perfil-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 0.1rem;
+  align-items: flex-end;
+  gap: 0.5rem;
   padding-block: 0.5rem;
 }
 
