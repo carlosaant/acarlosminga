@@ -12,6 +12,10 @@
   --h2-tam: 1.8rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-b);
 }
@@ -177,7 +181,7 @@ header .content::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: opacity(0.7);
+  filter: opacity(0.5);
 }
 
 header .content .perfil-image {
