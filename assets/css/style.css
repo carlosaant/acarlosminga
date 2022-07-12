@@ -217,6 +217,7 @@ header .content .perfil-text {
 header .content .perfil-text h2 {
   font-size: var(--h2-tam);
   color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.5);
 
   position: relative;
 }
@@ -224,12 +225,14 @@ header .content .perfil-text h2::before {
   content: '</>';
   color: var(--suport-color);
   position: absolute;
-  left: -3rem;
+  left: -3.5rem;
 }
 
 header .content .perfil-text h1 {
   font-size: var(--h1-tam);
   color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-block: 0.5rem;
 
   position: relative;
 }
@@ -238,7 +241,7 @@ header .content .perfil-text h1::after {
   content: '';
   display: block;
   width: 0.2rem;
-  height: var(--h1-tam);
+  height: calc(var(--h1-tam) + 1rem);
   background-color: var(--suport-color);
 
   position: absolute;
@@ -281,7 +284,7 @@ header .content .perfil-links .perfil-github {
   align-items: center;
   justify-content: space-around;
 
-  border: 0.2rem solid var(--suport-color);
+  border: 0.1rem solid var(--suport-color);
   border-radius: 0.5rem;
 
   transition: all 0.3s;
