@@ -312,6 +312,8 @@ header .content .perfil-links p {
   background-color: var(--secondary-color);
   position: relative;
   z-index: 1;
+
+  padding-block: 4rem;
 }
 
 #about::before {
