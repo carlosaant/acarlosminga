@@ -300,8 +300,14 @@ header .content .perfil-links svg {
   width: 4.5rem;
   height: 4.5rem;
 }
+
 header .content .perfil-links svg path {
   fill: var(--suport-color);
+  transition: fill 0.3s;
+}
+header .content .perfil-links .perfil-linkedin:hover svg path,
+header .content .perfil-links .perfil-github:hover svg path {
+  fill: var(--suport-color-yellow);
 }
 
 header .content .perfil-links p {
