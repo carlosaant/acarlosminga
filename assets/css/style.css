@@ -296,8 +296,12 @@ header .content .perfil-links .perfil-github:hover {
   border-color: var(--suport-color-yellow);
 }
 
-header .content .perfil-links img {
-  width: 5rem;
+header .content .perfil-links svg {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+header .content .perfil-links svg path {
+  fill: var(--suport-color);
 }
 
 header .content .perfil-links p {
