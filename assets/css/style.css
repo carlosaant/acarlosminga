@@ -316,6 +316,14 @@ header .content .perfil-links p {
   color: var(--text-color);
 }
 
+/* ================================== */
+.header h2 {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  font-size: var(--h2-tam);
+  color: var(--suport-color);
+}
+
 /* ============================== ABOUT ========================= */
 
 #about {
@@ -351,13 +359,6 @@ header .content .perfil-links p {
   padding-block: 2rem;
 
   gap: 2rem;
-}
-
-#about .about .header h2 {
-  padding-block: 1rem;
-  padding-inline: 2rem;
-  font-size: var(--h2-tam);
-  color: var(--suport-color);
 }
 
 #about .about .content {
@@ -404,4 +405,10 @@ header .content .perfil-links p {
   font-size: 1.6rem;
   line-height: 150%;
   text-align: justify;
+}
+
+/* =========================== */
+
+#skills {
+  background-color: var(--secondary-color);
 }
