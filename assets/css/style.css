@@ -413,6 +413,15 @@ header .content .perfil-links p {
   background-color: var(--secondary-color);
 }
 
+#skills .front-skills {
+  width: 100%;
+
+  border: 0.1rem solid var(--text-color);
+  border-radius: 0.1rem;
+
+  padding: 1rem;
+}
+
 /* skills progress */
 
 #skills .skills-bar-container {
@@ -425,7 +434,7 @@ header .content .perfil-links p {
 
 #skills li {
   width: 100%;
-  margin-bottom: 20px;
+  padding-block: 1rem;
 }
 
 #skills .progressbar-title {
@@ -434,13 +443,30 @@ header .content .perfil-links p {
 }
 
 #skills h3 {
+  font-size: 1.8rem;
+  /* text-transform: uppercase; */
+
   display: inline-block;
+
+  position: relative;
+
+  padding-left: 2rem;
+}
+#skills h3::before {
+  content: '</>';
+  font-size: 1rem;
+
+  color: var(--suport-color);
+
+  position: absolute;
+
+  left: 0;
 }
 
 #skills .percent {
   position: absolute;
-  right: 20px;
-  font-size: 1.1em;
+  right: 2rem;
+  font-size: 1.4rem;
 }
 
 #skills .bar-container {
