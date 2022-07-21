@@ -426,6 +426,23 @@ header .content .perfil-links p {
 
 #skills {
   background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+#skills .content {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+#skills .content .text-content {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+#skills .content .text-content p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  text-align: justify;
 }
 
 #skills .front-skills {
@@ -442,7 +459,6 @@ header .content .perfil-links p {
   font-size: 1.4rem;
   text-align: right;
   text-transform: uppercase;
-  color: var(--text-color);
 
   padding-top: 1rem;
   padding-right: 5rem;
