@@ -438,6 +438,33 @@ header .content .perfil-links p {
 }
 
 /* skills progress */
+#skills .development-title {
+  font-size: 1.4rem;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--text-color);
+
+  padding-top: 1rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+
+  position: relative;
+}
+#skills .development-title::before {
+  content: '';
+  display: block;
+
+  width: 5rem;
+  height: 2rem;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  position: absolute;
+  left: -2rem;
+  top: 0.2rem;
+
+  background: var(--suport-color);
+}
 
 #skills .skills-bar-container {
   position: relative;
