@@ -322,6 +322,21 @@ header .content .perfil-links p {
   padding-inline: 2rem;
   font-size: var(--h2-tam);
   color: var(--suport-color);
+
+  position: relative;
+}
+
+.header h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 2rem;
+
+  width: 5rem;
+  height: 0.4rem;
+
+  background: var(--suport-color);
 }
 
 /* ============================== ABOUT ========================= */
