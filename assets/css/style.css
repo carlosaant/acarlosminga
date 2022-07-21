@@ -412,3 +412,50 @@ header .content .perfil-links p {
 #skills {
   background-color: var(--secondary-color);
 }
+
+/* skills progress */
+
+#skills .skills-bar-container {
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+
+  padding-inline: 1rem;
+}
+
+#skills li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#skills .progressbar-title {
+  color: var(--suport-color-yellow);
+  margin-bottom: 0.5rem;
+}
+
+#skills h3 {
+  display: inline-block;
+}
+
+#skills .percent {
+  position: absolute;
+  right: 20px;
+  font-size: 1.1em;
+}
+
+#skills .bar-container {
+  background: var(--primary-color);
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+#skills .progressbar {
+  background: var(--suport-color);
+  position: absolute;
+  width: 0;
+  height: 100%;
+
+  border-radius: 0.5rem;
+}
