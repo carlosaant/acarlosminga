@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function onScroll() {
-  activateSectionAnimationBars(skills);
+  if (!developmentIsVisible) {
+    activateSectionAnimationBars(skills);
+  }
 }
 
 function activateSectionAnimationBars(section) {
@@ -19,11 +21,10 @@ function activateSectionAnimationBars(section) {
 
   const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop;
   const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
-  if (!developmentIsVisible)
-    if (sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine) {
-      animationBarsSkill(section);
-      developmentIsVisible = true;
-    }
+  if (sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine) {
+    animationBarsSkill(section);
+    developmentIsVisible = true;
+  }
 }
 
 function animationBarsSkill(section) {
