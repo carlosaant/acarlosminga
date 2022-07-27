@@ -1,42 +1,3 @@
-// $(document).ready(function () {
-//   let $developmentWrapper = $('#skills');
-//   let developmentIsVisible = false;
-
-//   $(window).scroll(function () {
-//     let bottom_of_window = $(window).scrollTop() + $(window).height();
-
-//     /*###### SKILLS SECTION ######*/
-
-//     let middle_of_developmentWrapper =
-//       $developmentWrapper.offset().top + $developmentWrapper.outerHeight() / 2;
-
-//     if (
-//       bottom_of_window > middle_of_developmentWrapper &&
-//       developmentIsVisible == false
-//     ) {
-//       $('.skills-bar-container li').each(function () {
-//         let $barContainer = $(this).find('.bar-container');
-//         let dataPercent = parseInt($barContainer.data('percent'));
-//         let elem = $(this).find('.progressbar');
-//         let percent = $(this).find('.percent');
-//         let width = 0;
-
-//         let id = setInterval(frame, 20);
-
-//         function frame() {
-//           if (width >= dataPercent) {
-//             clearInterval(id);
-//           } else {
-//             width++;
-//             elem.css('width', width + '%');
-//             percent.html(width + ' %');
-//           }
-//         }
-//       });
-//       developmentIsVisible = true;
-//     }
-//   }); // -- End window scroll --
-// });
 'use strict';
 
 let developmentIsVisible = false;
@@ -60,10 +21,28 @@ function activateSectionAnimationBars(section) {
   const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
   if (!developmentIsVisible)
     if (sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine) {
-      animationBarsSkill();
+      animationBarsSkill(section);
+      developmentIsVisible = true;
     }
 }
 
-function animationBarsSkill() {
-  console.log(document.querySelector('.skills-bar-container'));
+function animationBarsSkill(section) {
+  // document.getElementById('skills')
+  section.querySelectorAll('li').forEach(liItem => {
+    let barContainer = liItem.querySelector('.bar-container');
+    let dataPercent = parseInt(barContainer.dataset.percent);
+    let elemento = liItem.querySelector('.progressbar');
+    let percent = liItem.querySelector('.percent');
+    let width = 0;
+
+    let interval = setInterval(() => {
+      if (width >= dataPercent) {
+        clearInterval(interval);
+      } else {
+        width++;
+        elemento.style.width = width + '%';
+        percent.textContent = width + '%';
+      }
+    }, 20);
+  });
 }
