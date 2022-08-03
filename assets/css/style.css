@@ -556,3 +556,62 @@ header .content .perfil-links p {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
+
+#experience ul#time-line {
+  padding: 5rem 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  overflow: hidden;
+}
+#experience ul#time-line:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 1rem;
+  border-radius: 2rem;
+  background: var(--suport-color-yellow);
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  margin: auto;
+}
+
+#experience ul#time-line li {
+  width: 100%;
+  margin-left: 1rem;
+  text-align: left;
+  transition: all cubic-bezier(0.68, 0.55, 0.265, 1.55) 0.5s;
+}
+#experience ul#time-line li div {
+  /* width: 100%; */
+  display: inline-block;
+  background: var(--secondary-color);
+  padding: 3rem;
+  margin: 2rem;
+
+  border: 0.2rem solid var(--suport-color-yellow);
+  border-radius: 3rem;
+
+  position: relative;
+  color: var(--text-color);
+}
+#experience ul#time-line li div:after {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: 100%;
+  top: 45%;
+  border: solid 1rem;
+  border-color: transparent var(--suport-color-yellow) transparent transparent;
+}
+#experience ul#time-line li div:before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: var(--suport-color-yellow);
+  border-radius: 50%;
+  left: -30px;
+  top: 45%;
+}
