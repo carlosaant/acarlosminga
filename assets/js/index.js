@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleMenu(event) {
   if (event.type === 'touchstart') {
-    event.preventDefaut();
+    event.preventDefault();
   }
   const nav = document.getElementById('nav');
   nav.classList.toggle('active');
