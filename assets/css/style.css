@@ -118,9 +118,46 @@ nav.active #menu {
 /* btn mobile */
 
 #btn-mobile {
+  /* display: none; */
   display: flex;
   padding: 1rem 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
+
+#burger-menu {
+  color: var(--suport-color);
+  border-top: 0.2rem solid;
+  width: 3rem;
+}
+#burger-menu::before,
+#burger-menu::after {
+  content: '';
+  display: block;
+  position: relative;
+
+  width: 3rem;
+  height: 0.2rem;
+
+  background-color: currentColor;
+  margin-top: 0.5rem;
+
+  transition: all 0.3s;
+}
+
+/*  */
+nav.active #burger-menu {
+  border-top: none;
+}
+nav.active #burger-menu::before {
+  transform: rotate(45deg);
+}
+nav.active #burger-menu::after {
+  transform: rotate(-45deg);
+  top: -0.7rem;
+}
+/*  */
 
 /* ----------------------------- */
 
