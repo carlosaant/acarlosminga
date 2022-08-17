@@ -6,9 +6,13 @@ const btn_mobile = document.getElementById('btn-mobile');
 document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', onScroll);
   btn_mobile.addEventListener('click', toggleMenu);
+  btn_mobile.addEventListener('touchstart', toggleMenu);
 });
 
-function toggleMenu() {
+function toggleMenu(event) {
+  if (event.type === 'touchstart') {
+    event.preventDefaut();
+  }
   const nav = document.getElementById('nav');
   nav.classList.toggle('active');
 }
