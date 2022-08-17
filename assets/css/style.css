@@ -65,7 +65,7 @@ header nav #logo {
 }
 
 #menu {
-  display: none;
+  /* display: none; */
 
   position: absolute;
   width: 100%;
@@ -77,11 +77,23 @@ header nav #logo {
 
   background-color: var(--primary-color);
 
-  padding-block: 3rem;
-  /* align-items: center;
-  gap: 0.5rem; */
+  /* padding-block: 3rem; */
+
+  visibility: hidden;
+  overflow-y: hidden;
+
+  transition: 0.4s;
 }
 
+nav.active #menu {
+  /* display: flex; */
+  /* display: block; */
+  height: calc(100vh - 5rem);
+  visibility: visible;
+  overflow-y: auto;
+}
+
+/*  */
 #menu a {
   display: block;
 
@@ -99,13 +111,9 @@ header nav #logo {
   border-bottom-color: var(--suport-color-yellow);
 }
 
-/* ---- */
-nav.active #menu {
-  /* display: flex; */
-  display: block;
-  height: calc(100vh - 5rem);
+#menu li:first-child {
+  padding-top: 2rem;
 }
-/* ---- */
 
 /* btn mobile */
 
