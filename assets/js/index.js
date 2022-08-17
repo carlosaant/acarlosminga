@@ -1,10 +1,17 @@
 'use strict';
 
 let developmentIsVisible = false;
+const btn_mobile = document.getElementById('btn-mobile');
 
 document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', onScroll);
+  btn_mobile.addEventListener('click', toggleMenu);
 });
+
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
 
 function onScroll() {
   if (!developmentIsVisible) {
