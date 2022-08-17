@@ -99,16 +99,36 @@ nav.active #menu {
 
   padding-inline: 1rem;
   padding-block: 2rem;
+  padding-left: 2.5rem;
   margin: 0 1rem;
 
+  font-size: 1.8rem;
   color: var(--text-color);
   border-bottom-left-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
   border-bottom: 0.1rem solid var(--suport-color);
+  transition: all 0.2s;
+  position: relative;
 }
+
+#menu a::before {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: 95%;
+  top: 31%;
+  border: solid 1rem;
+  border-color: transparent transparent transparent var(--suport-color);
+  transition: all 0.2s;
+}
+
 #menu a:hover {
   background: rgba(0, 0, 0, 0.5);
   border-bottom-color: var(--suport-color-yellow);
+}
+#menu a:hover::before {
+  right: 94%;
+  border-color: transparent transparent transparent var(--suport-color-yellow);
 }
 
 #menu li:first-child {
