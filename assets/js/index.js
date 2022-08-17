@@ -15,6 +15,14 @@ function toggleMenu(event) {
   }
   const nav = document.getElementById('nav');
   nav.classList.toggle('active');
+  // caso esteja ativo
+  if (nav.classList.contains('active')) {
+    event.currentTarget.setAttribute('aria-expanded', true);
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-expanded', false);
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
 }
 
 function onScroll() {
