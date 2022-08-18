@@ -513,6 +513,10 @@ header .content .perfil-links p {
   text-align: justify;
 }
 
+#about .text-content .resume-perfil::first-letter {
+  font-size: 3rem;
+}
+
 /* =========================== */
 
 #skills {
