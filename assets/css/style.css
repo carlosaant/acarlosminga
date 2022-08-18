@@ -625,7 +625,10 @@ header .content .perfil-links p {
   display: inline-block;
 
   position: relative;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 0.3rem;
+  background-color: var(--primary-color);
+  border-radius: 1px;
 }
 /* #skills h3::before {
   content: '</>';
