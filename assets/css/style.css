@@ -543,6 +543,10 @@ header .content .perfil-links p {
   font-size: 1.6rem;
   line-height: 150%;
   text-align: justify;
+
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills .front-skills,
