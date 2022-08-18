@@ -602,7 +602,20 @@ header .content .perfil-links p {
 
 #skills .progressbar-title {
   color: var(--text-color);
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
+
+  padding-block: 0.5rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+#skills .progressbar-title svg {
+  width: 3rem;
+  height: 3rem;
+}
+#skills .progressbar-title svg path {
+  fill: var(--suport-color);
 }
 
 #skills h3 {
@@ -612,10 +625,9 @@ header .content .perfil-links p {
   display: inline-block;
 
   position: relative;
-
-  padding-left: 2rem;
+  padding-left: 0.5rem;
 }
-#skills h3::before {
+/* #skills h3::before {
   content: '</>';
   font-size: 1rem;
 
@@ -624,7 +636,7 @@ header .content .perfil-links p {
   position: absolute;
 
   left: 0;
-}
+} */
 
 #skills .percent {
   position: absolute;
