@@ -48,7 +48,7 @@ function activateSectionAnimationBars(section) {
 
 function animationBarsSkill(section) {
   // document.getElementById('skills')
-  section.querySelectorAll('li').forEach(liItem => {
+  section.querySelectorAll('.tech_item').forEach(liItem => {
     let barContainer = liItem.querySelector('.bar-container');
     let dataPercent = parseInt(barContainer.dataset.percent);
     let elemento = liItem.querySelector('.progressbar');
