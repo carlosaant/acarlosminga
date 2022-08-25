@@ -781,8 +781,46 @@ header .content .perfil-links p {
   padding-left: 0.5rem;
 }
 
+/* --------------- PROJECTS */
+
+#projects {
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+#projects .cards {
+  display: flex;
+}
+
+#projects .cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  position: relative;
+  background-color: red;
+}
+
+#projects .cards .card .content {
+  background-color: var(--primary-color);
+  padding-block: 0.5rem;
+}
+
+#projects .cards .card .content img {
+  width: 100%;
+}
+
+#projects .cards .card .content .desc-info {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 5rem;
+  height: 5rem;
+  background: var(--secondary-color);
+}
+
 /* =============================== DESKTOP ============================= */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body {
     overflow: auto;
   }
@@ -807,4 +845,4 @@ header .content .perfil-links p {
   #menu a:hover {
     background: rgba(0, 0, 0, 0.5);
   }
-}
+} */
