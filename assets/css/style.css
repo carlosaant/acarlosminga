@@ -669,7 +669,7 @@ header .content .perfil-links p {
   align-items: center;
   border-radius: 0.3rem;
   gap: 5rem;
-  padding-left: 10rem;
+  padding-left: 5rem;
 }
 
 #skills .tools-skills p {
@@ -781,18 +781,30 @@ header .content .perfil-links p {
   padding-left: 0.5rem;
 }
 
-/* menu desk model */
-/* #menu {
-  display: none;
-  align-items: center;
-  gap: 0.5rem;
-}
+/* =============================== DESKTOP ============================= */
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
 
-#menu a {
-  display: block;
-  padding: 0.5rem;
-  color: var(--text-color);
+  .wrapper {
+    width: min(112rem, 100%);
+
+    display: grid;
+  }
+
+  #menu {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--text-color);
+  }
+  #menu a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
-#menu a:hover {
-  background: rgba(0, 0, 0, 0.5);
-} */
