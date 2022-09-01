@@ -790,33 +790,72 @@ header .content .perfil-links p {
 
 #projects .cards {
   display: flex;
+  padding-top: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 #projects .cards .card {
-  width: 100%;
+  width: 40rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
 
   position: relative;
-  background-color: red;
+
+  border-radius: 2px;
+  background-color: var(--suport-color);
+}
+
+#projects .cards .card h1 {
+  font-size: 2.2rem;
+  padding-block: 0.5rem;
+  color: var(--primary-color);
+}
+#projects .cards .card .infos {
+  padding-bottom: 1rem;
+}
+#projects .cards .card .infos h4 {
+  font-size: 1.4rem;
 }
 
 #projects .cards .card .content {
   background-color: var(--primary-color);
-  padding-block: 0.5rem;
+  border-radius: 2px;
+  padding: 1rem;
 }
 
 #projects .cards .card .content img {
   width: 100%;
+  border: 0.1rem solid transparent;
+  border-radius: 1.3rem;
 }
 
 #projects .cards .card .content .desc-info {
   position: absolute;
-  left: 1.5rem;
+  left: 2.5rem;
   bottom: 5rem;
   height: 5rem;
   background: var(--secondary-color);
+}
+
+#projects .cards .card .techs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+
+  padding-top: 1rem;
+}
+
+#projects .cards .card .techs span {
+  display: block;
+  font-size: 1.4rem;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
 }
 
 /* =============================== DESKTOP ============================= */
