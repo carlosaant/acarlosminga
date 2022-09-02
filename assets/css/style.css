@@ -798,7 +798,7 @@ header .content .perfil-links p {
 }
 
 #projects .cards .card {
-  width: 40rem;
+  width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -829,16 +829,27 @@ header .content .perfil-links p {
 
 #projects .cards .card .content img {
   width: 100%;
-  border: 0.1rem solid transparent;
+  border: 0.2rem solid var(--secondary-color);
   border-radius: 1.3rem;
+  filter: grayscale(1);
 }
 
 #projects .cards .card .content .desc-info {
   position: absolute;
-  left: 2.5rem;
-  bottom: 5rem;
+  left: 2.3rem;
+  bottom: 5.5rem;
+
+  font-size: 1.3rem;
+  color: var(--primary-color);
+
   height: 5rem;
-  background: var(--secondary-color);
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #projects .cards .card .techs {
@@ -847,6 +858,7 @@ header .content .perfil-links p {
   gap: 0.3rem;
 
   padding-top: 1rem;
+  padding-left: 0.5rem;
 }
 
 #projects .cards .card .techs span {
