@@ -786,6 +786,8 @@ header .content .perfil-links p {
 #projects {
   background: var(--secondary-color);
   color: var(--text-color);
+
+  overflow: hidden;
 }
 
 #projects .cards {
@@ -808,23 +810,58 @@ header .content .perfil-links p {
   border-radius: 2px;
   background-color: var(--suport-color);
 }
+#projects .cards .card::after {
+  content: '';
+  width: 2rem;
+  height: 8.5rem;
+  background-color: var(--secondary-color);
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 12px;
+  transform: rotateZ(135deg);
+}
 
 #projects .cards .card h1 {
-  font-size: 2.2rem;
-  padding-block: 0.5rem;
+  font-size: 2.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1.5rem;
   color: var(--primary-color);
 }
 #projects .cards .card .infos {
   padding-bottom: 1rem;
 }
 #projects .cards .card .infos h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  padding-left: 1.3rem;
+  position: relative;
+}
+#projects .cards .card .infos h4::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--suport-color);
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+}
+#projects .cards .card .infos h4::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: var(--suport-color);
+  position: absolute;
+  bottom: -0.3rem;
 }
 
 #projects .cards .card .content {
   background-color: var(--primary-color);
   border-radius: 2px;
   padding: 1rem;
+  position: relative;
 }
 
 #projects .cards .card .content img {
@@ -832,24 +869,34 @@ header .content .perfil-links p {
   border: 0.2rem solid var(--secondary-color);
   border-radius: 1.3rem;
   filter: grayscale(1);
+  transition: filter 0.3s;
+}
+
+#projects .cards .card .content img:hover {
+  filter: grayscale(0);
 }
 
 #projects .cards .card .content .desc-info {
   position: absolute;
-  left: 2.3rem;
-  bottom: 5.5rem;
+  left: 1.3rem;
+  bottom: 2.1rem;
+  width: 80%;
 
-  font-size: 1.3rem;
-  color: var(--primary-color);
-
-  height: 5rem;
+  padding: 0.2rem;
 
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 1px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#projects .cards .card .content .desc-info p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 #projects .cards .card .techs {
@@ -865,9 +912,10 @@ header .content .perfil-links p {
   display: block;
   font-size: 1.4rem;
   padding-inline: 1rem;
-  padding-block: 0.2rem;
-  border-radius: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 5px;
   background-color: var(--secondary-color);
+  border: 0.1rem solid var(--text-color);
 }
 
 /* =============================== DESKTOP ============================= */
