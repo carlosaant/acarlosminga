@@ -827,7 +827,22 @@ header .content .perfil-links p {
   padding-top: 0.3rem;
   padding-bottom: 1.5rem;
   color: var(--primary-color);
+
+  position: relative;
+  z-index: 1;
 }
+#projects .cards .card h1::before {
+  content: '';
+  width: 10rem;
+  height: 1.5rem;
+  background-color: var(--secondary-color);
+  display: block;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0;
+}
+
 #projects .cards .card .infos {
   padding-bottom: 1rem;
 }
@@ -896,6 +911,7 @@ header .content .perfil-links p {
 #projects .cards .card .content .desc-info p {
   font-size: 1.4rem;
   font-weight: 600;
+  line-height: 130%;
   color: var(--primary-color);
 }
 
