@@ -806,6 +806,7 @@ header .content .perfil-links p {
   padding: 1rem;
 
   position: relative;
+  overflow: hidden;
 
   border-radius: 2px;
   background-color: var(--suport-color);
@@ -925,13 +926,22 @@ header .content .perfil-links p {
 }
 
 #projects .cards .card .techs span {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.4rem;
   padding-inline: 1rem;
   padding-block: 0.5rem;
   border-radius: 5px;
   background-color: var(--secondary-color);
   border: 0.1rem solid var(--text-color);
+}
+#projects .techs svg {
+  width: 2rem;
+  height: 2rem;
+}
+#projects .techs svg path {
+  fill: var(--suport-color);
 }
 
 /* =============================== DESKTOP ============================= */
