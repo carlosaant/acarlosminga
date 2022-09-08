@@ -922,6 +922,8 @@ header .content .perfil-links p {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 130%;
+  text-align: justify;
+  padding-inline: 0.3rem;
   color: var(--primary-color);
 }
 
