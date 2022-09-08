@@ -788,6 +788,7 @@ header .content .perfil-links p {
   color: var(--text-color);
 
   overflow: hidden;
+  padding-top: 5rem;
 }
 
 #projects .content .description {
