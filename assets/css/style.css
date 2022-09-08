@@ -790,6 +790,15 @@ header .content .perfil-links p {
   overflow: hidden;
 }
 
+#projects .content .description {
+  padding-top: 5rem;
+  padding-inline: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 130%;
+  text-align: justify;
+}
+
 #projects .cards {
   display: flex;
   padding-top: 2.5rem;
@@ -894,8 +903,8 @@ header .content .perfil-links p {
 
 #projects .cards .card .content .desc-info {
   position: absolute;
-  left: 1.3rem;
-  bottom: 2.1rem;
+  left: 1.2rem;
+  bottom: 2.5rem;
   width: 80%;
 
   padding: 0.2rem;
