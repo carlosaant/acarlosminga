@@ -805,7 +805,7 @@ header .content .perfil-links p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
 #projects .cards .card {
@@ -832,10 +832,27 @@ header .content .perfil-links p {
   transform: rotateZ(135deg);
 }
 
+#projects .card .header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+#projects .card .header a {
+  padding: 0.2rem;
+  display: flex;
+}
+#projects .card .header svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+#projects .card .header svg path {
+  stroke: var(--secondary-color);
+}
+
 #projects .cards .card h1 {
+  width: 25rem;
   font-size: 2.5rem;
   padding-top: 0.3rem;
-  padding-bottom: 1.5rem;
   color: var(--primary-color);
 
   position: relative;
@@ -891,6 +908,7 @@ header .content .perfil-links p {
 
 #projects .cards .card .content img {
   width: 100%;
+  height: 25rem;
   border: 0.2rem solid var(--secondary-color);
   border-radius: 1.3rem;
   filter: grayscale(1);
@@ -923,7 +941,7 @@ header .content .perfil-links p {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 130%;
-  text-align: justify;
+  letter-spacing: 0.1rem;
   padding-inline: 0.3rem;
   color: var(--text-color);
 }
