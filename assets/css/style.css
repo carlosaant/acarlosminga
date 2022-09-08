@@ -503,8 +503,8 @@ header .content .perfil-links p {
 }
 
 #about .about .text-content {
+  padding-top: 0.5rem;
   padding-inline: 2rem;
-  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 #about .about .text-content p {
