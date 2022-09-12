@@ -1,6 +1,7 @@
 'use strict';
 
 let developmentIsVisible = false;
+let experienseTimelineIsVisible = false;
 const btn_mobile = document.getElementById('btn-mobile');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,6 +29,9 @@ function toggleMenu(event) {
 function onScroll() {
   if (!developmentIsVisible) {
     activateSectionAnimationBars(skills);
+  }
+  if (!experienseTimelineIsVisible) {
+    activateSectionAnimationTimeline(experience);
   }
 }
 
@@ -65,4 +69,30 @@ function animationBarsSkill(section) {
       }
     }, 20);
   });
+}
+
+function activateSectionAnimationTimeline(section) {
+  const targetLine = scrollY + innerHeight / 2;
+
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const sectionEndsAt = sectionTop + sectionHeight;
+
+  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop;
+  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
+  if (sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine) {
+    section.querySelectorAll('li').forEach(liItem => {
+      // liItem.style.marginLeft = '5rem';
+      let rem = 20;
+      let interval = setInterval(() => {
+        if (rem <= 2) {
+          clearInterval(interval);
+        }
+        rem--;
+        liItem.style.marginLeft = rem + 'rem';
+      }, 20);
+    });
+
+    experienseTimelineIsVisible = true;
+  }
 }
