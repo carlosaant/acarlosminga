@@ -854,7 +854,7 @@ header .content .perfil-links p {
 }
 
 #projects .content {
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 
 #projects .content .description {
@@ -872,7 +872,7 @@ header .content .perfil-links p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 4rem;
 }
 
 #projects .cards .card {
@@ -1072,7 +1072,7 @@ footer .content .contact .contact-info {
   flex-direction: column;
   gap: 0.5rem;
 
-  padding-block: 2rem;
+  padding-block: 3rem;
 }
 
 footer .contact .contact-info .contact-email,
