@@ -791,6 +791,10 @@ header .content .perfil-links p {
   padding-top: 5rem;
 }
 
+#projects .content {
+  padding-bottom: 5rem;
+}
+
 #projects .content .description {
   padding-top: 5rem;
   padding-inline: 0.5rem;
@@ -974,6 +978,36 @@ header .content .perfil-links p {
 }
 #projects .techs svg path {
   fill: var(--suport-color);
+}
+
+/* ============================================================= */
+
+footer {
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .content .contact {
+  width: 100%;
+}
+footer .content .contact h2 {
+  color: var(--suport-color);
+}
+
+footer .content .description {
+  font-size: 1.4rem;
+  padding-top: 3rem;
+}
+footer .content .description span {
+  color: var(--suport-color);
 }
 
 /* =============================== DESKTOP ============================= */
