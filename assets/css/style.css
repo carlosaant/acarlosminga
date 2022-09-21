@@ -299,7 +299,7 @@ header .content .circles li:nth-child(9) {
 }
 
 header .content .circles li:nth-child(10) {
-  left: 85%;
+  left: 80%;
   width: 150px;
   height: 150px;
   animation-delay: 0s;
@@ -1088,7 +1088,7 @@ footer .content .description span {
   }
 
   nav .wrapper {
-    width: min(112rem, 100%);
+    width: min(76rem, 100%);
     display: flex;
     justify-content: space-between;
   }
@@ -1140,8 +1140,18 @@ footer .content .description span {
   }
 }
 
+/* ============================= */
 @media (min-width: 1024px) {
   body {
     overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  nav .wrapper {
+    width: min(112rem, 100%);
   }
 }
