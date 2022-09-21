@@ -26,12 +26,34 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- <nav>
-      <div class="wrapper">menu</div>
-    </nav> -->
+    <nav id="nav">
+      <div class="wrapper">
+        <a id="logo" href="#">ACM</a>
+
+        <button
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span id="burger-menu"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#about" onclick="toggleMenu(event)">Sobre mim</a></li>
+          <li>
+            <a href="#skills" onclick="toggleMenu(event)">Habilidades</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="toggleMenu(event)">Projetos</a>
+          </li>
+          <li><a href="#footer" onclick="toggleMenu(event)">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
     <header>
       <div class="wrapper">
-        <nav id="nav">
+        <!-- <nav id="nav">
           <a id="logo" href="#">ACM</a>
           <button
             id="btn-mobile"
@@ -52,7 +74,7 @@
             </li>
             <li><a href="#footer" onclick="toggleMenu(event)">Contato</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <div class="content">
           <div class="area">
             <ul class="circles">
