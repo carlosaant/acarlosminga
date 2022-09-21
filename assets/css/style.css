@@ -1082,29 +1082,66 @@ footer .content .description span {
 }
 
 /* =============================== DESKTOP ============================= */
-/* @media (min-width: 1024px) {
-  body {
-    overflow: auto;
+@media (min-width: 768px) {
+  nav {
+    height: 7rem;
   }
 
-  .wrapper {
+  nav .wrapper {
     width: min(112rem, 100%);
+    display: flex;
+    justify-content: space-between;
+  }
 
-    display: grid;
+  nav.active #menu {
+    /* display: none; */
+    height: initial;
+    visibility: initial;
+    overflow-y: initial;
+  }
+
+  /* ------ */
+  #menu {
+    display: initial;
+    position: initial;
+    z-index: initial;
+    visibility: initial;
+    overflow-y: initial;
+  }
+  /* ------ */
+
+  #btn-mobile {
+    display: none;
   }
 
   #menu {
-    display: none;
+    display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
+    justify-content: flex-end;
+  }
+
+  #menu li:first-child {
+    padding-top: initial;
   }
 
   #menu a {
     display: block;
-    padding: 0.5rem;
+    padding: 1.5rem;
+    margin: 0;
     color: var(--text-color);
   }
   #menu a:hover {
     background: rgba(0, 0, 0, 0.5);
   }
-} */
+
+  #menu a::before {
+    content: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+}
