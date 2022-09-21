@@ -1191,4 +1191,16 @@ footer .content .description span {
     /* vai ocupar a Coluna B */
     grid-area: B;
   }
+
+  /* ================== header ================= */
+  header .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'A';
+  }
+
+  header .content {
+  }
+  header .content .area {
+    background: none;
+  }
 }
