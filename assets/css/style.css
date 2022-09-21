@@ -1140,6 +1140,34 @@ footer .content .description span {
   }
 }
 
+/*  ======================BUTTON/BACK TO TOP==================== */
+
+#backToTopButton {
+  position: fixed;
+  z-index: 999;
+  bottom: 5rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  /* joga para fora da tela, pra depois voltar com o .show */
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+/* quando ele estiver com a classe .show */
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+#backToTopButton svg circle {
+  fill: var(--primary-color);
+}
+
 /* ============================= */
 @media (min-width: 1024px) {
   body {
@@ -1153,5 +1181,14 @@ footer .content .description span {
 
   nav .wrapper {
     width: min(112rem, 100%);
+  }
+
+  .col-a {
+    /* vai ocupar a Coluna A */
+    grid-area: A;
+  }
+  .col-b {
+    /* vai ocupar a Coluna B */
+    grid-area: B;
   }
 }

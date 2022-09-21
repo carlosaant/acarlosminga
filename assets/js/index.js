@@ -2,6 +2,7 @@
 
 let developmentIsVisible = false;
 let experienseTimelineIsVisible = false;
+let backToTopButton = document.getElementById('backToTopButton');
 const btn_mobile = document.getElementById('btn-mobile');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +28,7 @@ function toggleMenu(event) {
 }
 
 function onScroll() {
+  showBackToTopButtonOnScroll();
   if (!developmentIsVisible) {
     activateSectionAnimationBars(skills);
   }
@@ -94,5 +96,14 @@ function activateSectionAnimationTimeline(section) {
     });
 
     experienseTimelineIsVisible = true;
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  // tamanho da tela pra ativar
+  if (scrollY > 500) {
+    backToTopButton.classList.add('show');
+  } else {
+    backToTopButton.classList.remove('show');
   }
 }
