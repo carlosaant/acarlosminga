@@ -1202,7 +1202,7 @@ footer .content .description span {
   header .content {
     flex-direction: row;
     justify-content: space-evenly;
-    padding-block: 5rem;
+    padding-block: 10rem;
   }
 
   header .content .area {
