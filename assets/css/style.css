@@ -1202,7 +1202,7 @@ footer .content .description span {
   header .content {
     flex-direction: row;
     justify-content: space-evenly;
-    padding-block: 10rem;
+    padding-block: 7rem;
   }
 
   header .content .area {
@@ -1228,8 +1228,8 @@ footer .content .description span {
   }
 
   header .content .perfil-image {
-    width: 20rem;
-    height: 20rem;
+    width: 23rem;
+    height: 23rem;
   }
 
   /* ============================== */
