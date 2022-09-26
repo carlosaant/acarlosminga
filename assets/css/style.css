@@ -1289,4 +1289,21 @@ footer .content .description span {
   #skills .tools-skills li {
     gap: 8rem;
   }
+
+  /* ====================== */
+
+  #experience .content {
+    display: flex;
+    justify-content: center;
+    padding-block: 7rem;
+  }
+
+  #experience ul#time-line li div {
+    padding-inline: 4rem;
+  }
+  #experience ul#time-line li p {
+    width: 40rem;
+    text-align: justify;
+    padding-inline: 0.2rem;
+  }
 }
