@@ -1199,8 +1199,35 @@ footer .content .description span {
   }
 
   header .content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 5rem;
   }
+
   header .content .area {
     background: none;
+  }
+
+  header .content .content-perfil-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  header .content .perfil-links {
+    width: 20rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  header .content .perfil-links .perfil-linkedin,
+  header .content .perfil-links .perfil-github {
+    width: 20rem;
+  }
+
+  header .content .perfil-image {
+    width: 20rem;
+    height: 20rem;
   }
 }
