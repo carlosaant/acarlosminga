@@ -320,7 +320,12 @@ header .content .circles li:nth-child(10) {
   }
 }
 /* ---------------- */
-
+header .content .content-perfil-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 header .content .perfil-image {
   background-color: var(--primary-color);
   width: 17rem;
@@ -578,12 +583,12 @@ header .content .perfil-links p {
   gap: 2rem;
 }
 
-#skills .content .text-content {
+#skills .text-content {
   padding-inline: 2rem;
   padding-block: 1rem;
 }
 
-#skills .content .text-content p {
+#skills .text-content p {
   font-size: 1.6rem;
   line-height: 150%;
   text-align: justify;
