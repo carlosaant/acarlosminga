@@ -1230,4 +1230,19 @@ footer .content .description span {
     width: 20rem;
     height: 20rem;
   }
+
+  /* ============================== */
+
+  #about .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+  }
+  #about .about .content {
+    margin-top: 10rem;
+    padding-block: 5rem;
+  }
+  #about .about .img-about {
+    width: 30rem;
+  }
 }
