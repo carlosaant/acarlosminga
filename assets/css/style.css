@@ -1328,4 +1328,16 @@ footer .content .description span {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /* ======================== */
+
+  footer .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .content .contact h2 {
+    margin-left: -10rem;
+  }
 }
