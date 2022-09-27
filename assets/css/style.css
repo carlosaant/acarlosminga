@@ -851,6 +851,13 @@ header .content .perfil-links p {
   justify-content: space-around;
   border: 0.1rem solid var(--suport-color);
   border-radius: 0.5rem;
+
+  transition: all 0.3s;
+}
+
+#experience .content-link-cv .perfil-cv:hover {
+  background-color: var(--primary-color);
+  border-color: var(--suport-color-yellow);
 }
 
 /* --------------- PROJECTS */
