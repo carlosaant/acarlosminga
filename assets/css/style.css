@@ -828,6 +828,31 @@ header .content .perfil-links p {
   padding-left: 0.5rem;
 }
 
+#experience .content-link-cv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+#experience .content-link-cv a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+#experience .content-link-cv .perfil-cv {
+  width: 21rem;
+  padding-block: 1.8rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 0.1rem solid var(--suport-color);
+  border-radius: 0.5rem;
+}
+
 /* --------------- PROJECTS */
 
 #projects {
@@ -1296,6 +1321,9 @@ footer .content .description span {
     display: flex;
     justify-content: center;
     padding-block: 7rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
   }
 
   #experience ul#time-line li div {
