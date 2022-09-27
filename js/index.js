@@ -107,3 +107,30 @@ function showBackToTopButtonOnScroll() {
     backToTopButton.classList.remove('show');
   }
 }
+
+//
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 500
+}).reveal(`
+#about,
+#about .text-content,
+#about .resume-perfil,
+#about .img-about,
+#about .text-content p,
+#skills,
+#skills .header,
+#skills .text-content,
+#skills .content,
+#skills .tools-skills,
+#experience,
+#experience .header,
+#experience .content,
+#experience .content-link-cv,
+#projects,
+#projects .header,
+#projects .content,
+#projects .cards,
+#projects .card,
+#projects .card .techs`);
