@@ -365,7 +365,7 @@ header .content .perfil-text h2::before {
   content: '</>';
   color: var(--suport-color);
   position: absolute;
-  left: -3.5rem;
+  left: -4rem;
 }
 
 header .content .perfil-text h1 {
