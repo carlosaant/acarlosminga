@@ -1284,6 +1284,40 @@ footer .content .description span {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
   }
+
+  #about .about .header {
+    position: relative;
+  }
+  #about .about .header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -29rem;
+    left: 7rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    background-color: var(--suport-color);
+    transform: rotate(65deg);
+  }
+
+  #about .about .header .text-content {
+    position: relative;
+  }
+  #about .about .header .text-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -18rem;
+    left: 35rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+    background-color: var(--suport-color);
+    opacity: 0.8;
+    transform: rotate(20deg);
+  }
+
   #about .about .content {
     margin-top: 10rem;
     padding-block: 5rem;
