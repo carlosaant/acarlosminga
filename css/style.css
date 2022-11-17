@@ -59,6 +59,10 @@ nav #logo {
   color: var(--text-color);
 }
 
+nav #logo::first-letter {
+  color: var(--suport-color);
+}
+
 #menu {
   /* display: none; */
 
@@ -434,7 +438,6 @@ header .content .perfil-links .perfil-github {
 
 header .content .perfil-links .perfil-linkedin:hover,
 header .content .perfil-links .perfil-github:hover {
-  transform: scale(1.1);
   border-color: var(--suport-color-yellow);
 }
 
@@ -452,10 +455,20 @@ header .content .perfil-links .perfil-github:hover svg path {
   fill: var(--suport-color-yellow);
 }
 
+header .content .perfil-links .perfil-linkedin:hover p,
+header .content .perfil-links .perfil-github:hover p {
+  transition: all 0.3s;
+  border-color: var(--suport-color-yellow);
+}
+
 header .content .perfil-links p {
   font-size: 1.8rem;
   font-weight: bold;
   color: var(--text-color);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-left: 0.1rem solid var(--suport-color);
+  border-right: 0.1rem solid var(--suport-color);
 }
 
 /* ================================== */
