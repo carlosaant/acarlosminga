@@ -4,6 +4,8 @@ let developmentIsVisible = false;
 let experienseTimelineIsVisible = false;
 let backToTopButton = document.getElementById('backToTopButton');
 const btn_mobile = document.getElementById('btn-mobile');
+const nav = document.getElementById('nav');
+const menu = document.getElementById('menu');
 
 document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', onScroll);
@@ -15,15 +17,39 @@ function toggleMenu(event) {
   if (event.type === 'touchstart') {
     event.preventDefault();
   }
-  const nav = document.getElementById('nav');
+  event.stopPropagation();
+  handleClickOutside(menu, () => {
+    nav.classList.remove('active');
+    setAriaMenu();
+  });
   nav.classList.toggle('active');
-  // caso esteja ativo
-  if (nav.classList.contains('active')) {
-    event.currentTarget.setAttribute('aria-expanded', true);
-    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  setAriaMenu();
+}
+
+function setAriaMenu() {
+  const isActive = nav.classList.contains('active');
+  btn_mobile.setAttribute('aria-expanded', isActive);
+  if (isActive) {
+    btn_mobile.setAttribute('aria-label', 'Fechar Menu');
   } else {
-    event.currentTarget.setAttribute('aria-expanded', false);
-    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+    btn_mobile.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+function handleClickOutside(targetElement, callback) {
+  const html = document.documentElement;
+  function handleHTMLClick(event) {
+    if (!targetElement.contains(event.target)) {
+      targetElement.removeAttribute('data-target');
+      html.removeEventListener('click', handleHTMLClick);
+      html.removeEventListener('touchstart', handleHTMLClick);
+      callback();
+    }
+  }
+  if (!targetElement.hasAttribute('data-target')) {
+    html.addEventListener('click', handleHTMLClick);
+    html.addEventListener('touchstart', handleHTMLClick);
+    targetElement.setAttribute('data-target', '');
   }
 }
 
