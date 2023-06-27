@@ -1329,6 +1329,11 @@ footer .content .description span {
   #about .about .header .text-content {
     position: relative;
   }
+
+  #about .about .text-content {
+    padding-top: 2.5rem;
+  }
+
   #about .about .header .text-content::after {
     content: '';
     display: block;
