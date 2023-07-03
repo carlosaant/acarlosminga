@@ -150,6 +150,8 @@ ScrollReveal({
 #skills .text-content,
 #skills .content,
 #skills .tools-skills,
+#skills .tools-skills li,
+#skills .tools-skills li p,
 #experience,
 #experience .header,
 #experience .content,
