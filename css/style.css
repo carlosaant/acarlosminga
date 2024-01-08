@@ -80,7 +80,7 @@ nav #logo::first-letter {
 }
 
 nav.active #menu {
-  height: calc(100vh - var(--nav-height));
+  height: 100%;
   visibility: visible;
   overflow-y: auto;
 }
