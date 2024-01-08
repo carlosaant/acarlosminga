@@ -52,6 +52,12 @@ nav .wrapper {
   align-items: center;
 }
 
+nav.active {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
 nav #logo {
   font-size: 2rem;
   color: var(--text-color);
@@ -80,9 +86,15 @@ nav #logo::first-letter {
 }
 
 nav.active #menu {
+  position: fixed;
   height: 100%;
   visibility: visible;
   overflow-y: auto;
+  /* z-index: 9999; */
+}
+
+nav.active + header {
+  padding-top: var(--nav-height);
 }
 
 /*  */
