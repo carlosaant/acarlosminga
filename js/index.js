@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function toggleMenu(event) {
+  const isMobile = window.innerWidth <= 768;
   if (event.type === 'touchstart') {
     event.preventDefault();
   }
@@ -22,8 +23,10 @@ function toggleMenu(event) {
     nav.classList.remove('active');
     setAriaMenu();
   });
-  nav.classList.toggle('active');
-  setAriaMenu();
+  if (isMobile) {
+    nav.classList.toggle('active');
+    setAriaMenu();
+  }
 }
 
 function setAriaMenu() {
@@ -127,7 +130,7 @@ function activateSectionAnimationTimeline(section) {
 
 function showBackToTopButtonOnScroll() {
   // tamanho da tela pra ativar
-  if (scrollY > 500) {
+  if (scrollY > 500 && !nav.classList.contains('active')) {
     backToTopButton.classList.add('show');
   } else {
     backToTopButton.classList.remove('show');
