@@ -127,7 +127,7 @@ function activateSectionAnimationTimeline(section) {
 
 function showBackToTopButtonOnScroll() {
   // tamanho da tela pra ativar
-  if (scrollY > 500) {
+  if (scrollY > 500 && !nav.classList.contains('active')) {
     backToTopButton.classList.add('show');
   } else {
     backToTopButton.classList.remove('show');
